@@ -8,7 +8,7 @@ import { add, subtract, reset } from './actions.js';
 /**
  * Attach store to the global window object to make it accessible in the console.
  */
-(window as any).store = store;
+//(window as any).store = store;
 
 /**
  * Subscribes to store updates and logs the new state to the console.
