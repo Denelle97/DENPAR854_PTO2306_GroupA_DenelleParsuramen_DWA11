@@ -1,7 +1,14 @@
 //This file logs the state changes to the console in real time.
 
+
+
 import { store } from './store.js';
 import { add, subtract, reset } from './actions.js';
+
+/**
+ * Attach store to the global window object to make it accessible in the console.
+ */
+(window as any).store = store;
 
 /**
  * Subscribes to store updates and logs the new state to the console.
